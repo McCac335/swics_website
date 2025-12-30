@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Code with SWICS</title>
+	<title>Hack with SWiCS</title>
+	<link rel="icon" type="image/png" href="images/logo-swics.png">
 	<link rel="stylesheet" href="style.css">
+
 </head>
 
-<body>
-    <img alt="Swics Logo" src="images/logo-swics.png" class="logo">
-	<h1>Hack with SWICS</h1>
-    <br>
-    <h2>Save the date: 22nd Feb 2026</h2>
-	<p>More information coming soon...</p>
+<body id="home">
+	<div class="bg-watercolour"></div>
+
+	<nav class="navbar" id="navbar">
+		<!-- navigation links -->
+		<div class="nav-links">
+			<a href="#home" class="active">Home</a>
+			<a href="#sponsors">Sponsors</a>
+			<a href="#schedule">Schedule</a>
+			<a href="#faq">FAQ</a>
+			<a href="#contact">Contact</a>
+		</div>
+
+		<!-- hamburger menu icon for mobile view -->
+		<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+	</nav>
+
+	<main>
+
+		<div class="top-section">
+			<h1><span>Hack With </span>SWiCS</h1>
+		</div>
+
+		<h2 class="top-section-date">Save the date: 22nd Feb 2026</h2>
+		<p class="intro">More information coming soon...</p>
+	</main>
+
+	<a href="https://linktr.ee/swics" class="floating-logo">
+		<img alt="Swics Logo" src="images/logo-swics.png" class="logo">
+	</a>
+
+	<footer>
+		<small>
+			&copy; 2025 Sheffield Women In Computer Science Society
+		</small>
+	</footer>
+
 	<script src="script.js"></script>
 
 </body>
+
 </html>
