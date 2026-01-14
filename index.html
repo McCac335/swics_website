@@ -10,31 +10,288 @@
 
 </head>
 
-<body id="home">
+<a id="mlh-trust-badge"
+	style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
+	href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
+	target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg"
+		alt="Major League Hacking 2026 Hackathon Season" style="width:100%">
+</a>
+
+<body id="about">
 	<div class="bg-watercolour"></div>
 
 	<nav class="navbar" id="navbar">
+		<!-- hamburger menu icon for mobile view -->
+		<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+
 		<!-- navigation links -->
 		<div class="nav-links">
-			<a href="#home" class="active">Home</a>
+			<a href="#about" class="active">About</a>
 			<a href="#sponsors">Sponsors</a>
 			<a href="#schedule">Schedule</a>
 			<a href="#faq">FAQ</a>
 			<a href="#contact">Contact</a>
 		</div>
 
-		<!-- hamburger menu icon for mobile view -->
-		<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+
 	</nav>
 
 	<main>
 
-		<div class="top-section">
+		<div class="heading">
 			<h1><span>Hack With </span>SWiCS</h1>
 		</div>
 
-		<h2 class="top-section-date">Save the date: 22nd Feb 2026</h2>
-		<p class="intro">More information coming soon...</p>
+		<div class="countdown">
+			<div class="countdown-num">
+				<span id="days">00</span>
+				<p>Days</p>
+			</div>
+			<div class="countdown-num">
+				<span id="hours">00</span>
+				<p>Hours</p>
+			</div>
+			<div class="countdown-num">
+				<span id="minutes">00</span>
+				<p>Min</p>
+			</div>
+			<div class="countdown-num">
+				<span id="seconds">00</span>
+				<p>Sec</p>
+			</div>
+		</div>
+
+		<hr>
+
+		<h3>Registration opening soon: follow our <a href="#contact">socials</a> to be the first to know!</h3>
+
+		<hr>
+
+		<section>
+			<h2 class="subheading">Join us on 22nd February 2026</h2>
+			<p class="intro">
+				The Sheffield Women in Computer Science Society (SWiCS) is excited to
+				announce the launch of our very own single-day, inclusivity-focused
+				hackathon!
+			</p>
+			<p class="intro">
+				With 6-hours of dedicated building time, you'll have the exciting opportunity
+				to code AI-powered solutions, and go from ideation to creation within a supportive environment
+				of fellow students.
+			</p>
+			<p class="intro">
+				We welcome beginners, first-time hackers, and students from all
+				backgrounds, especially those from underrepresented groups in STEM :).
+			</p>
+			<p class="intro">
+				We'll be located in the university's iconic Diamond building, only 15 minutes away from
+				the <a class="link" href="https://maps.app.goo.gl/hMScs6vH6VJ5tgT87">coach</a>
+				and <a class="link" href="https://maps.app.goo.gl/saibKCZWvjtCqDoA6">train</a>
+				stations via public transport.
+			</p>
+
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.84938545933!2d-1.4819343000000003!3d53.381744299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48797881e28b3e81%3A0x611c9522ca2169ed!2sThe%20Diamond!5e0!3m2!1sen!2suk!4v1768354907625!5m2!1sen!2suk"
+				width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade">
+			</iframe>
+		</section>
+
+		<hr>
+
+		<section id="sponsors">
+			<div class="heading">
+				<h1>Sponsors</h1>
+			</div>
+			<p class="email-us">Interested in supporting our inaugural event? Email us below:</p>
+			<a href="mailto:womenincs@sheffield.ac.uk?subject=Hack%20With%20SWiCS%20%2726%20Sponsorship%3A%20%5BYour%20Organisation%5D"
+				class="sponsor-button">
+				<h2 class="subheading">Become a Sponsor!</h2>
+			</a>
+		</section>
+
+		<hr>
+
+		<section id="schedule">
+			<div class="heading">
+				<h1><span>Event </span>Schedule</h1>
+			</div>
+			<p class="intro">Here's what to expect at Hack With SWiCS 2026:</p>
+			<div class="roadmap-container">
+				<div class="roadmap-item">
+					<div class="roadmap-dot"></div>
+					<div class="roadmap-content">
+						<h3>10:00 AM</h3>
+						<p>Doors Open & Check-in</p>
+					</div>
+				</div>
+				<div class="roadmap-item">
+					<div class="roadmap-dot"></div>
+					<div class="roadmap-content">
+						<h3>10:30 AM</h3>
+						<p>Opening Ceremony & Team Formation</p>
+					</div>
+				</div>
+				<div class="roadmap-item">
+					<div class="roadmap-dot"></div>
+					<div class="roadmap-content">
+						<h3>11:00 AM</h3>
+						<p>Hacking Begins!</p>
+					</div>
+				</div>
+				<div class="roadmap-item">
+					<div class="roadmap-dot"></div>
+					<div class="roadmap-content">
+						<h3>1:00 PM</h3>
+						<p>Lunch Break</p>
+					</div>
+				</div>
+				<div class="roadmap-item">
+					<div class="roadmap-dot"></div>
+					<div class="roadmap-content">
+						<h3>5:00 PM</h3>
+						<p>Project Submissions Close</p>
+					</div>
+				</div>
+				<div class="roadmap-item">
+					<div class="roadmap-dot"></div>
+					<div class="roadmap-content">
+						<h3>5:15 PM</h3>
+						<p>Dinner Served</p>
+					</div>
+				</div>
+				<div class="roadmap-item">
+					<div class="roadmap-dot"></div>
+					<div class="roadmap-content">
+						<h3>6:00 PM</h3>
+						<p>Demos & Judging</p>
+					</div>
+				</div>
+				<div class="roadmap-item">
+					<div class="roadmap-dot"></div>
+					<div class="roadmap-content">
+						<h3>7:00 PM</h3>
+						<p>Awards & Closing Ceremony</p>
+					</div>
+				</div>
+				<div class="roadmap-item">
+					<div class="roadmap-dot"></div>
+					<div class="roadmap-content">
+						<h3>8:00 PM</h3>
+						<p>Doors Close</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr>
+
+		<section id="faq">
+			<div class="heading">
+				<h1>FAQ</h1>
+			</div>
+
+			<div class="faq-container">
+				<details class="faq-item">
+					<summary>Who can participate?</summary>
+					<div class="faq-content">
+						<p>As long as you are over 18 and enrolled in university... you can! We strongly encourage beginners,
+							first-time hackers and non-coders to attend</p>
+					</div>
+				</details>
+				<details class="faq-item">
+					<summary>Where is the event located?</summary>
+					<div class="faq-content">
+						<p><b>The Diamond (University of Sheffield)</b></p>
+						<p>32 Leavygreave Rd, Broomhall, Sheffield, S3 7RD</p>
+					</div>
+				</details>
+				<details class="faq-item">
+					<summary>What is the team size limit?</summary>
+					<div class="faq-content">
+						<p>Teams can be made up of 1 to 4 people. We'll have a team building activity early on in the day if you
+							need to find teammates</p>
+					</div>
+				</details>
+				<details class="faq-item">
+					<summary>Do I have to stay overnight?</summary>
+					<div class="faq-content">
+						<p>Nope! We wanted Hack With SWiCS to be as accessible to as many people as possible, which means no need
+							for overnight hacking</p>
+					</div>
+				</details>
+				<details class="faq-item">
+					<summary>How much does it cost to attend?</summary>
+					<div class="faq-content">
+						<p>Thanks to our sponsors and partners, Hack With SWiCS is completely free to attend and food will be
+							provided
+						</p>
+					</div>
+				</details>
+				<details class="faq-item">
+					<summary>Will the travel to Sheffield be reimbursed?</summary>
+					<div class="faq-content">
+						<p>SWiCS is presently unable to provide travel reimbursements. However, Sheffield is well-connected by coach
+							and train, so
+							feel free to reach out to us for recommendations about low-cost travel routes</p>
+					</div>
+				</details>
+				<details class="faq-item">
+					<summary>What should I bring?</summary>
+					<div class="faq-content">
+						<p>A laptop, a charger, and yourself (plus we'd recommend a refillable water bottle!)</p>
+					</div>
+				</details>
+				<details class="faq-item">
+					<summary>I have a different question...</summary>
+					<div class="faq-content">
+						<p>Ask us via one of the links in the Contact section below!</p>
+					</div>
+				</details>
+			</div>
+
+
+		</section>
+
+
+		<hr>
+
+		<section id="contact">
+			<div class="heading">
+				<h1><span>Contact </span>SWiCS</h1>
+			</div>
+			<p class="intro">We’d love to hear from you: please reach out with any questions about Hack With SWiCS.</p>
+
+			<div class="contact-grid">
+				<div class="contact-card">
+					<h2>Get in touch:</h2>
+					<ul class="contact-list">
+						<li>
+							<p><strong>Discord:</strong> <a href="https://discord.com/invite/MUz4TSySXE" class="link" target="_blank"
+									rel="noreferrer">Women In Computer Science (SWiCS)</a></p>
+						</li>
+						<li>
+						<li>
+							<p><strong>Instagram:</strong> <a href="https://instagram.com/sheffieldwics" class="link" target="_blank"
+									rel="noreferrer">sheffieldwics</a></p>
+						</li>
+						<li>
+							<p><strong>Email:</strong> <a href="mailto:womenincs@sheffield.ac.uk"
+									class="link">womenincs@sheffield.ac.uk</a></p>
+						</li>
+						<li>
+							<p>
+								<strong>LinkedIn:</strong> <a
+									href="https://www.linkedin.com/company/sheffield-women-in-computer-science" class="link"
+									target="_blank" rel="noreferrer">Sheffield Women in Computer Science Society</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</section>
+
 	</main>
 
 	<a href="https://linktr.ee/swics" class="floating-logo">
@@ -42,6 +299,11 @@
 	</a>
 
 	<footer>
+		<small>
+			As an MLH Hack Day, Hack With SWiCS abides by the <a
+				href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md">MLH Code of Conduct</a>.
+		</small>
+		<br>
 		<small>
 			&copy; 2025 Sheffield Women In Computer Science Society
 		</small>
