@@ -145,12 +145,12 @@ p {
 main {
     max-width: 1200px;
     /* increased top margin to account for fixed 60px navbar */
-    margin: 80px auto 20px auto; 
+    margin: 80px auto 20px auto;
     padding: 0 20px;
     min-height: 100vh;
     flex: 1;
     width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .logo {
@@ -239,6 +239,48 @@ main {
     -webkit-text-stroke: 2px var(--swics-dark-accent);
 }
 
+.partnership-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px auto;
+    width: 95%;
+    max-width: 1200px;
+    opacity: 0.9;
+}
+
+.banner-label {
+    font-family: "display-font", sans-serif;
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: black;
+    white-space: nowrap;
+}
+
+.partnership-logos {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 16px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    flex-shrink: 0;
+}
+
+.brand-logo {
+    height: 24px;
+    width: auto;
+}
+
+.partnership-logos span {
+    margin: 0 12px;
+    font-size: 1.2rem;
+    color: var(--off-black);
+}
+
 .countdown {
     display: grid;
     /* enforce 2 columns on mobile & 4 on desktop */
@@ -283,6 +325,64 @@ main {
     font-size: clamp(2.25rem, 5vw, 3rem);
     line-height: 1.1;
     text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
+}
+
+.calendar-section {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.calendar-bar {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 12px 25px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-label {
+    font-family: "display-font", sans-serif;
+    font-size: 0.9rem;
+    color: var(--swics-dark-accent);
+    margin-right: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.calendar-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.cal-link {
+    text-decoration: none;
+    color: var(--swics-blue-accent);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.cal-link:hover {
+    color: var(--swics-bright-accent);
+}
+
+.cal-divider {
+    color: rgba(0, 0, 0, 0.1);
+    font-weight: 300;
+}
+
+.reminder-text {
+    font-size: 0.85rem;
+    color: var(--swics-medium-accent);
+    margin-top: 12px;
+    font-style: italic;
 }
 
 .intro {
@@ -336,6 +436,7 @@ section {
     margin-top: 60px;
 
 }
+
 .roadmap-container {
     padding: 40px;
     border-radius: 200px;
@@ -417,30 +518,35 @@ section {
 }
 
 .contact-grid {
-  margin-top: 60px;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1.5rem;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: calc(15vh - 10px);
+    margin-top: 60px;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(15vh - 10px);
 }
 
 
 .contact-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 @keyframes jump {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-12px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-12px);
+    }
 }
 
 .floating-logo {
@@ -490,6 +596,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
     /* hide navigation links by default on mobile */
     .nav-links {
         display: none;
@@ -501,7 +608,7 @@ footer {
         justify-content: flex-start;
         padding: 0;
     }
-    
+
     /* show hamburger menu icon on mobile */
     .navbar .menu-icon {
         display: flex;
@@ -534,10 +641,61 @@ footer {
         padding: 15px 20px;
     }
 
+    .calendar-bar {
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 20px;
+        width: 90%;
+        gap: 15px;
+    }
+
+    .calendar-label {
+        margin-right: 0;
+        font-size: 0.8rem;
+    }
+
+    .calendar-links {
+        /* stack vertically on mobile*/
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .cal-divider {
+        display: none;
+    }
+
+    .cal-link {
+        width: 100%;
+        padding: 8px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+    }
 }
 
-@media screen and (min-width: 768px) {
+
+
+/* specific layout for non-phone screens */
+@media screen and (min-width: 600px) {
     .countdown {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .partnership-banner {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .banner-label.side-left {
+        flex: 1;
+        text-align: right;
+    }
+
+    .banner-label.side-right {
+        flex: 1;
+        text-align: left;
+    }
+
+    
+
 }
