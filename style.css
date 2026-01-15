@@ -321,68 +321,61 @@ main {
     color: var(--swics-medium-accent);
 }
 
+
+.cta-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.reg-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 36px;
+    background: linear-gradient(135deg, var(--swics-blue-accent), var(--swics-bright-accent));
+    color: white;
+    text-decoration: none;
+    font-family: "display-font", sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(63, 55, 169, 0.3);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.reg-button:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 15px 30px rgba(175, 108, 238, 0.4);
+    filter: brightness(1.1);
+}
+
+.reg-button:active {
+    transform: scale(0.98);
+}
+
+.btn-icon {
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
+}
+
+.reg-button:hover .btn-icon {
+    transform: translateX(10px);
+}
+
+.reg-note {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: var(--swics-medium-accent);
+    font-style: italic;
+    opacity: 0.8;
+}
+
 .subheading {
     font-size: clamp(2.25rem, 5vw, 3rem);
     line-height: 1.1;
     text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
-}
-
-.calendar-section {
-    margin: 40px auto;
-    text-align: center;
-}
-
-.calendar-bar {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 12px 25px;
-    border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-}
-
-.calendar-label {
-    font-family: "display-font", sans-serif;
-    font-size: 0.9rem;
-    color: var(--swics-dark-accent);
-    margin-right: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.calendar-links {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-}
-
-.cal-link {
-    text-decoration: none;
-    color: var(--swics-blue-accent);
-    font-weight: bold;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.cal-link:hover {
-    color: var(--swics-bright-accent);
-}
-
-.cal-divider {
-    color: rgba(0, 0, 0, 0.1);
-    font-weight: 300;
-}
-
-.reminder-text {
-    font-size: 0.85rem;
-    color: var(--swics-medium-accent);
-    margin-top: 12px;
-    font-style: italic;
 }
 
 .intro {
@@ -671,6 +664,14 @@ footer {
         background: rgba(255, 255, 255, 0.2);
         border-radius: 8px;
     }
+
+    .reg-button {
+        padding: 15px 25px;
+        font-size: 1rem;
+        width: 90%;
+        justify-content: center;
+    }
+
 }
 
 
@@ -696,6 +697,6 @@ footer {
         text-align: left;
     }
 
-    
+
 
 }

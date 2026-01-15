@@ -40,36 +40,6 @@ const countdown = () => {
 
 };
 
-// create a custom calendar invite for the event
-document.getElementById('ics-download').addEventListener('click', function (e) {
-    e.preventDefault();
-
-    const event = [
-        'BEGIN:VCALENDAR',
-        'VERSION:2.0',
-        'PRODID:-//SWiCS//Hackathon//EN',
-        'BEGIN:VEVENT',
-        'UID:' + Date.now() + '@hackwithswics.com',
-        'DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z',
-        'DTSTART;TZID=Europe/London:20260222T100000',
-        'DTEND;TZID=Europe/London:20260222T200000',
-        'SUMMARY:Hack with SWiCS: An MLH x Gemini Hack Day',
-        'DESCRIPTION:Join SWiCS for the launch of our single-day, inclusivity-focused hackathon: 6 hours of building time, powered by Google Gemini.\\n\\nWe welcome beginners, first-time hackers, and students from all backgrounds, especially those from underrepresented groups in STEM :).',
-        'LOCATION:The Diamond, 32 Leavygreave Rd, Broomhall, Sheffield S3 7RD, UK',
-        'END:VEVENT',
-        'END:VCALENDAR'
-    ].join('\n');
-
-    const blob = new Blob([event], { type: 'text/calendar;charset=utf-8' });
-    const url = window.URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.setAttribute('download', 'hack-with-swics.ics');
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-});
-
 // run the countdown every second & call immediately 
 setInterval(countdown, 1000);
 countdown();
